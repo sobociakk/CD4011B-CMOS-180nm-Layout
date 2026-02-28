@@ -1,0 +1,115 @@
+OPAMP - TEST BENCH
+***** Deklaracja biblioteki z modelami tranzystorow ******
+.lib tsmc180_t77a_spice.lib
+.temp 125
+
+******* Definicja ukladu CD4011B jako podobwodu ******
+.subckt CD4011B inA inB out Vdd Vss
+
+
+;M1  1 inA vdd vdd PFET W=0.6u L=0.2u
+;M2  1 inA vss vss NFET W=0.3u L=0.2u
+;M3  2 inB vdd vdd PFET W=0.6u L=0.2u
+;M4  2 inB vss vss NFET W=0.3u L=0.2u
+;M5  4 1 vss vss NFET W=0.3u L=0.2u
+;M6  5 1 vdd vdd PFET W=0.6u L=0.2u
+;M7  4 2 5 vdd PFET W=0.6u L=0.2u
+;M8  4 2 vss vss NFET W=0.3u L=0.2u
+;M9  3 4 vdd vdd PFET W=0.6u L=0.2u
+;M10 3 4 vss vss NFET W=0.3u L=0.2u
+
+*Stopnie bufora*
+
+;MB1 1B 3 vdd vdd PFET W=0.6u L=0.2u
+;MB2 1B 3 vss vss NFET W=0.3u L=0.2u
+;MB3 2B 1B vdd vdd PFET W=5.4u L=0.2u
+;MB4 2B 1B vss vss NFET W=2.7u L=0.2u
+;MB5 3B 2B vdd vdd PFET W=48.6u L=0.2u
+;MB6 3B 2B vss vss NFET W=24.3u L=0.2u
+;MB7 out 3B vdd vdd PFET W=440u L=0.2u
+;MB8 out 3B vss vss NFET W=220u L=0.2u
+
+.ends
+
+******* Wywolanie podobwodu ********
+;x1 inA inB out vdd vss CD4011B
+
+******* Wczytanie po-ekstrakcyjnej netlisty ukladu ******
+.include ./nand.spice
+
+********************* Zasilanie **************************
+* Warunki Worst-Case: Vdd=1.62V (1.8V - 10%)
+Vdd vdd 0 DC 1.62
+Vss vss 0 DC 0
+
+*************** Obciazenie (Wymagania) *******************
+CL out 0 25p
+I_load out 0 DC 0   ; Obciazenie pradowe (domyslnie 0 dla testu AC)
+
+******************** Analiza DC (Wydajność pradowa 15mA) ****************************
+* OPCJA 1: TESTOWANIE STANU WYSOKIEGO (Test PMOS / V_OH)
+* Wejścia: 0 i 1 -> Wyjście NAND = 1 (Wysoki)
+* Prąd obciążenia: Ciągnie do masy (dodatni w DC sweep)
+;Va inA 0 DC 0
+;Vb inB 0 DC 1.62
+;.dc I_load 0 20m 0.1m
+
+* OPCJA 2: TESTOWANIE STANU NISKIEGO (Test NMOS / V_OL)
+* Aby włączyć tę opcję, odkomentuj poniższe 2 linie i zakomentuj te wyżej.
+* Wejścia: 1 i 1 -> Wyjście NAND = 0 (Niski)
+* Prąd obciążenia: Musi "wpychać" prąd (użyjemy ujemnego sweepa lub źródła do VDD)
+Va inA 0 DC 1.62
+Vb inB 0 DC 1.62
+.dc I_load -20m 0 0.1m
+
+******************** ANALIZA TRANSIENT ****************************
+* Wymuszenie sygnału 30 MHz
+;Va inA 0 PULSE(0 1.62 0 0.5n 0.5n 16.16n 33.33n)
+;Vb inB 0 DC 1.62
+
+* Symulujemy 100ns
+;.tran 0.05n 100n
+
+* Pomiary do odczytania:
+;.meas tran t_rise TRIG v(out) VAL=0.162 RISE=1 TARG v(out) VAL=1.458 RISE=1
+;.meas tran t_fall TRIG v(out) VAL=1.458 FALL=1 TARG v(out) VAL=0.162 FALL=1
+;.meas tran t_prop_LH TRIG v(inA) VAL=0.81 FALL=1 TARG v(out) VAL=0.81 RISE=1
+;.meas tran V_max MAX v(out)
+;.meas tran V_min MIN v(out)
+
+;.param trise = 0.87n
+;.param tfall = 0.656n
+
+* Parametry dla symulacji
+;.param freq = 100Meg
+;.param period = {1/freq}
+* Zachowanie 50% duty cycle przy asymetrycznych zboczach:
+;.param pulse_width = {(period/2) - (trise+tfall)/2}
+
+* Źródło parametryczne z realistycznymi zboczami
+;Va inA 0 PULSE(0 1.62 0 {trise} {tfall} {pulse_width} {period})
+;Vb inB 0 DC 1.62
+
+* Symulujemy 4 pełne okresy w zależności od częstotliwości
+;.tran 0.05n {4*period}
+
+* Krokujemy częstotliwość od 100 MHz do 1 GHz z krokiem 50 MHz
+;.step param freq 100Meg 1000Meg 50Meg
+
+* Pomiary krytyczne:
+;.meas tran V_max MAX v(out)
+;.meas tran V_min MIN v(out)
+
+******************** BADANIE NAPIĘCIA PRZEŁĄCZANIA (V_M) ****************************
+;Vb inB 0 DC 1.62
+;Va inA 0 DC 0
+
+;.dc Va 0 1.62 0.001
+
+;.meas DC V_threshold FIND v(inA) WHEN v(out)=0.81
+
+* Pomiar średniego prądu zasilania (I_avg)
+* AVG oblicza średnią arytmetyczną przebiegu prądu w zadanym oknie czasowym
+;.meas tran I_avg_supply AVG i(Vdd) FROM=0 TO=100n
+
+.end

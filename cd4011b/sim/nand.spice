@@ -1,0 +1,162 @@
+* SPICE3 file created from /home/maniek_ekwador/cd4011b/nand.ext - technology: scmos
+
+M1000 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=70p pd=254u as=76.68p ps=285.6u
+M1001 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1002 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1003 a_n5183_49# a_n5213_63# vdd vdd pfet w=0.6u l=0.2u
++  ad=0.3p pd=2.2u as=285.3p ps=869.4u
+M1004 vdd a_n5158_26# a_n5141_26# vdd pfet w=5.4u l=0.2u
++  ad=0p pd=0u as=15.66p ps=59.8u
+M1005 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=140p ps=494u
+M1006 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1007 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1008 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1009 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1010 a_n5141_26# a_n5158_26# vdd vdd pfet w=5.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1011 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1012 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1013 vss a_n5158_26# a_n5141_26# Vss nfet w=2.7u l=0.2u
++  ad=0p pd=0u as=7.83p ps=32.8u
+M1014 vss a_n5158_26# a_n5141_26# Vss nfet w=2.7u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1015 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1016 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1017 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1018 a_n5141_26# a_n5158_26# vdd vdd pfet w=5.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1019 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1020 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1021 a_n5141_26# a_n5158_26# vdd vdd pfet w=5.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1022 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1023 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1024 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1025 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1026 vss a_n5158_26# a_n5141_26# Vss nfet w=2.7u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1027 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1028 a_n5141_26# a_n5158_26# vss Vss nfet w=2.7u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1029 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1030 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1031 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1032 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1033 a_n5213_63# a_n5252_34# vdd vdd pfet w=0.6u l=0.2u
++  ad=0.3p pd=2.2u as=0p ps=0u
+M1034 a_n5213_63# a_n5252_34# vss Vss nfet w=0.3u l=0.2u
++  ad=0.19p pd=1.8u as=0p ps=0u
+M1035 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1036 vdd a_n5158_26# a_n5141_26# vdd pfet w=5.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1037 a_n5141_26# a_n5158_26# vdd vdd pfet w=5.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1038 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1039 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1040 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1041 a_n5141_26# a_n5158_26# vss Vss nfet w=2.7u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1042 a_n5141_26# a_n5158_26# vss Vss nfet w=2.7u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1043 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1044 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1045 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1046 a_n5252_34# a_n5250_97# a_n5256_101# vdd pfet w=0.6u l=0.2u
++  ad=0.3p pd=2.2u as=0.36p ps=2.4u
+M1047 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1048 a_n5250_97# inB vdd vdd pfet w=0.6u l=0.2u
++  ad=0.3p pd=2.2u as=0p ps=0u
+M1049 a_n5158_26# a_n5183_49# vdd vdd pfet w=5.4u l=0.2u
++  ad=2.7p pd=11.8u as=0p ps=0u
+M1050 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1051 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1052 a_n5250_97# inB vss Vss nfet w=0.3u l=0.2u
++  ad=0.19p pd=1.8u as=0p ps=0u
+M1053 out a_n5141_26# vss Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1054 vdd a_n5158_26# a_n5141_26# vdd pfet w=5.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1055 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1056 a_n5183_49# a_n5213_63# vss Vss nfet w=0.3u l=0.2u
++  ad=0.19p pd=1.8u as=0p ps=0u
+M1057 vss a_n5158_26# a_n5141_26# Vss nfet w=2.7u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1058 a_n5141_26# a_n5158_26# vss Vss nfet w=2.7u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1059 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1060 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1061 a_n5256_101# a_n5258_92# vdd vdd pfet w=0.6u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1062 vdd a_n5158_26# a_n5141_26# vdd pfet w=5.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1063 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1064 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1065 a_n5252_34# a_n5258_92# vss Vss nfet w=0.3u l=0.2u
++  ad=0.49p pd=3.8u as=0p ps=0u
+M1066 vdd a_n5158_26# a_n5141_26# vdd pfet w=5.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1067 out a_n5141_26# vdd vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1068 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1069 vss a_n5141_26# out Vss nfet w=10u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1070 vdd a_n5141_26# out vdd pfet w=20u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1071 vss a_n5250_97# a_n5252_34# Vss nfet w=0.3u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1072 a_n5258_92# inA vdd vdd pfet w=0.6u l=0.2u
++  ad=0.3p pd=2.2u as=0p ps=0u
+M1073 a_n5258_92# inA vss Vss nfet w=0.3u l=0.2u
++  ad=0.19p pd=1.8u as=0p ps=0u
+M1074 a_n5158_26# a_n5183_49# vss Vss nfet w=2.7u l=0.2u
++  ad=1.35p pd=6.4u as=0p ps=0u
+M1075 vss a_n5158_26# a_n5141_26# Vss nfet w=2.7u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+C0 vss vdd 6.13fF
+C1 vdd a_n5141_26# 8.64fF
+C2 out vdd 53.98fF
+C3 vss a_n5141_26# 3.11fF
+C4 out vss 27.03fF
+C5 vss Vss 3.25fF
+C6 a_n5141_26# Vss 3.51fF
+C7 vdd Vss 62.29fF
