@@ -67,7 +67,7 @@ The scaled output buffers were rigorously verified across the following conditio
 ### Post-extraction Output buffer current drive capability
 ![cdc_vh_pe](cd4011b/img/cdc_vh_pe.png)
 *At a current load of 15mA, with Vdd –10% and a maximum temperature of 125°C, the output high voltage drops to 1.476V.*
-![cdc_vl_pe](4011b/img/cdc_vl_pe.png)
+![cdc_vl_pe](cd4011b/img/cdc_vl_pe.png)
 *At a current load of 15mA, Vdd –10% and a maximum temperature of 125°C, the output low voltage drops to 78.131 mV.*
 
 ### Post-extraction Signal rise and fall time
