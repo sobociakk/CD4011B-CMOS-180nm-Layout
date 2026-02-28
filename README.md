@@ -1,7 +1,7 @@
 # CD4011B-CMOS-180nm-Custom-Layout
 
 ## Overview
-This repository contains a full-custom physical design of a CD4011B equivalent integrated circuit. The project was developed from schematic entry down to the physical layout and post-layout verification. 
+This repository contains a full-custom physical design of a CD4011B equivalent integrated circuit. The project was developed from schematic entry down to the physical layout and post-layout verification as part of the "Integrated Circuits and Systems Engineering" course at Gdańsk University of Technology
 
 *Note: Due to NDA restrictions, proprietary TSMC technology files are not included. This repository serves as a portfolio showcase of the design methodology, layout structures, and simulation results.*
 
