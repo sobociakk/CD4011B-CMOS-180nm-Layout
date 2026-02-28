@@ -23,61 +23,61 @@ The scaled output buffers were rigorously verified across the following conditio
 * **Capacitive Load:** 25 pF
 
 ## IC diagram
-![ic_diagram](img/ic_diagram.png)
+![ic_diagram](/img/ic_diagram.png)
 
 ## Proposed layout schematic and pre-extraction netlist
-![schem_netlist](img/schem_netlist.png)
+![schem_netlist](/img/schem_netlist.png)
 
 ## Pre-extraction Waveforms & Verification
 
 ### Output buffer current drive capability
-![cdc_vh](img/cdc_vh.png)
+![cdc_vh](/img/cdc_vh.png)
 *At a current load of 15mA, with Vdd –10% and a maximum temperature of 125°C, the output high voltage drops to 1.476V.*
-![cdc_vl](img/cdc_vl.png)
+![cdc_vl](/img/cdc_vl.png)
 *At a current load of 15mA, Vdd –10% and a maximum temperature of 125°C, the output low voltage drops to 78.795 mV.*
 
 ### Signal rise and fall time
-![s_rise](img/s_rise.png)
+![s_rise](/img/s_rise.png)
 *The rise time is 0.86 ns.*
-![s_fall](img/s_fall.png)
+![s_fall](/img/s_fall.png)
 *The fall time is 0.65 ns.*
 
 ### Threshold voltage
-![th_voltage](img/th_voltage.png)
+![th_voltage](/img/th_voltage.png)
 *The threshold voltage is 697 mV.*
 
 ### DC current consumption
-![idd_cons](img/idd_cons.png)
+![idd_cons](/img/idd_cons.png)
 *Averge DC current consumption is 1.40 mA, with a peak of 50 mA.*
 
 ## Single gate layout
-![gate_lay](img/gate_lay.png)
+![gate_lay](/img/gate_lay.png)
 
 ## Gate with buffer stages
-![gateb_lay](img/gateb_lay.png)
+![gateb_lay](/img/gateb_lay.png)
 
 ## ESD protection + Pad
-![esd_pad](img/esd_pad.png)
+![esd_pad](/img/esd_pad.png)
 
 ## Layout topography
-![layout](img/layout.png)
+![layout](/img/layout.png)
 
 ## Post-extraction Waveforms & Verification
 
 ### Post-extraction Output buffer current drive capability
-![cdc_vh_pe](img/cdc_vh_pe.png)
+![cdc_vh_pe](/img/cdc_vh_pe.png)
 *At a current load of 15mA, with Vdd –10% and a maximum temperature of 125°C, the output high voltage drops to 1.476V.*
-![cdc_vl_pe](img/cdc_vl_pe.png)
+![cdc_vl_pe](/img/cdc_vl_pe.png)
 *At a current load of 15mA, Vdd –10% and a maximum temperature of 125°C, the output low voltage drops to 78.131 mV.*
 
 ### Post-extraction Signal rise and fall time
-![s_rise_pe](img/s_rise_pe.png)
+![s_rise_pe](/img/s_rise_pe.png)
 *The rise time is 0.87 ns.*
-![s_fall_pe](img/s_fall_pe.png)
+![s_fall_pe](/img/s_fall_pe.png)
 *The fall time is 0.65 ns.*
 
 ### Post-extraction Threshold voltage
-![th_voltage_pe](img/th_voltage_pe.png)
+![th_voltage_pe](/img/th_voltage_pe.png)
 *The threshold voltage is 697 mV.*
 
 ## Results Summary
