@@ -81,9 +81,9 @@ The scaled output buffers were rigorously verified across the following conditio
 *The threshold voltage is 697 mV.*
 
 ## Results Summary
-The following table compares the theoretical requirements with the LTSpice simulation results, both pre-layout and post-layout (with extracted parasitics).
+The following table compares the theoretical requirements with the LTSpice simulation results, both pre-layout and post-layout.
 
-| Parameter | Target | Pre-Layout | Post-Layout (Extracted) |
+| Parameter | Target | Pre-Layout | Post-Layout |
 | :--- | :--- | :--- | :--- |
 | **Max Frequency** | $\ge$ 30 MHz | 30.00 MHz | 29.948 MHz |
 | **Output Voltage High (15 mA load)** | $\ge$ 1.62 V (90% VDD) | 1.476 V | 1.476 V |
