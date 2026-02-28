@@ -22,12 +22,11 @@ The scaled output buffers were rigorously verified across the following conditio
 * **Temperature Range:** -30°C to +125°C
 * **Capacitive Load:** 25 pF
 
-## IC diagram
+## IC diagram [^1]
 ![ic_diagram](cd4011b/img/ic_diagram.png)
 
-## Proposed layout schematic and pre-extraction netlist
+## Proposed layout schematic [^2] and pre-extraction netlist
 ![schem_netlist](cd4011b/img/schem_netlist.png)
-
 ## Pre-extraction Waveforms & Verification
 
 ### Output buffer current drive capability
@@ -101,3 +100,8 @@ The designed circuit has been optimized for the required temperature range, ensu
 * `layout/` - Magic VLSI layouts
 * `img/` - Screenshots of waveforms and layouts
 * `sim/` - LTSpice waveform plots
+
+## References
+[^1]: https://www.ti.com/lit/ds/symlink/cd4011b.pdf?ts=1772251161710&ref_url=https%253A%252F%252Fwww.google.com%252F
+
+[^2]: https://www.build-electronic-circuits.com/4000-series-integrated-circuits/ic-4011/
