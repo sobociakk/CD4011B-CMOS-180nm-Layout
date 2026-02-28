@@ -99,5 +99,5 @@ The designed circuit has been optimized for the required temperature range, ensu
 
 ## Repository Contents
 * `layout/` - Magic VLSI layouts
-* `images/` - Screenshots of waveforms and layouts
+* `img/` - Screenshots of waveforms and layouts
 * `sim/` - LTSpice waveform plots
