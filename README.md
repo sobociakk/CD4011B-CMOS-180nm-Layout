@@ -99,7 +99,7 @@ The designed circuit has been optimized for the required temperature range, ensu
 ## Repository Contents
 * `layout/` - Magic VLSI layouts
 * `img/` - Screenshots of waveforms and layouts
-* `sim/` - LTSpice waveform plots
+* `sim/` - Layout simulations in LTspice
 
 ## References
 [^1]: https://www.ti.com/lit/ds/symlink/cd4011b.pdf?ts=1772251161710&ref_url=https%253A%252F%252Fwww.google.com%252F
